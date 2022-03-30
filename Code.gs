@@ -1,10 +1,13 @@
 var config = {
-	domains: [{
-		name: "NAME OF THE SHARED DRIVE PROVIDER", //CONFIGURABLE
-		client_id: "", //CONFIGURABLE
-		client_secret: "", //CONFIGURABLE
-		refresh_token: "", //CONFIGURABLE
-	}],
+	domains: [ 
+		{}, //Leave the first domain empty for Random Option Index == 0
+		{
+			name: "NAME OF THE SHARED DRIVE PROVIDER", //CONFIGURABLE
+			client_id: "", //CONFIGURABLE
+			client_secret: "", //CONFIGURABLE
+			refresh_token: "", //CONFIGURABLE
+		}
+	],
 	access_token: "",
 	td_request: {
 		name: "",
@@ -50,7 +53,7 @@ function matchDomain(){
       return i;
     }
 	}
-  return 0; //Default to zero
+  return 0; //Default to zero = random
 }
 
 
@@ -150,6 +153,10 @@ function enQuery(data) {
 }
 
 function getAccessToken(domain_number) {
+	if(!domain_number || domain_number == 0){
+		domain_number = getRandomDomain();
+	}
+	
 	if(config.access_token !== undefined && config.access_token !== ""){
 		return config.access_token;
 	}
@@ -157,9 +164,9 @@ function getAccessToken(domain_number) {
 	const url = "https://www.googleapis.com/oauth2/v4/token";
 	
 	const payload = {
-		client_id: config.domains[0].client_id,
-		client_secret: config.domains[0].client_secret,
-		refresh_token: config.domains[0].refresh_token,
+		client_id: config.domains[domain_number].client_id,
+		client_secret: config.domains[domain_number].client_secret,
+		refresh_token: config.domains[domain_number].refresh_token,
 		grant_type: "refresh_token",
 	};
 
@@ -193,5 +200,9 @@ function uuidv4() {
 	    v = c == "x" ? r : (r & 0x3) | 0x8;
 	  	return v.toString(16);
 	});
+}
+
+function getRandomDomain() {
+  return Math.floor(Math.random() * (config.domains.length)) + 1;
 }
 
