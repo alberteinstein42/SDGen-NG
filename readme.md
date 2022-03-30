@@ -65,8 +65,7 @@ To deploy this project on Google Forms
 - Note: Please don't change the text of the question, as the text of question is used in code to look for the respective response to the question. Also, keep the type of `Shared Drive Provider` quesion as `Dropdown`.
 - A completed form should look something like this -
 ![Completed Google Form](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/sample-google-form.jpg?raw=true)
-- Now, go to `Settings` tab of the Google Form(just above the title of the form) and make sure that the highlighted settings shown in below image are configured properly - 
-` `
+- Now, go to `Settings` tab of the Google Form(just above the title of the form) and make sure that the highlighted settings shown in below image are configured properly - <br/>
 ![Google Form Settings](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/google-form-setting.png?raw=true)
 - Then, go to `Responses` tab of the Google Form and click on the sheets icon to enable recording the responses in a Google Spreadsheet. This is required to be able to generate Shared Drive upon request -
 ![Responses to Google Sheet](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/responses-sheet.png?raw=true)
