@@ -67,7 +67,7 @@ To deploy this project on Google Forms
 ![Responses to Google Sheet](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/responses-sheet.png?raw=true)
 - Upon clicking the Google Sheets icon, you'll be asked about which sheet to use. Go with `Create New Spreadsheet` option and click `Create` -
 ![Create Spreadsheet](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/create-spreadsheet.png?raw=true)
-- Upon clicking `Create` button, the newly created spreadsheet will open. In the Google Spreadsheet, go to `Extensions` menu > click on `Apps Script` option -
+- Upon clicking `Create` button, the newly created spreadsheet will open. In the Google Spreadsheet, go to `Extensions` menu > click on `Apps Script` option - <br />
 ![Spreadsheet Apps Script](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/spreadsheet-apps-script.png?raw=true)
 - This will open a new tab of Google Apps Script Project with Code Editor. Give the Project a decent name - 
 ![Apps Script Project Title](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/apps-script-title.png?raw=true)
