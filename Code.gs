@@ -1,9 +1,9 @@
 var config = {
 	domains: [{
-		name: "NAME OF THE DOMAIN",
-		client_id: "",
-		client_secret: "",
-		refresh_token: "",
+		name: "NAME OF THE SHARED DRIVE PROVIDER", //CONFIGURABLE
+		client_id: "", //CONFIGURABLE
+		client_secret: "", //CONFIGURABLE
+		refresh_token: "", //CONFIGURABLE
 	}],
 	access_token: "",
 	td_request: {
@@ -16,9 +16,9 @@ var config = {
 function onSubmit(e) {
 
   var values = e.namedValues;
-  config.td_request.email = values["Email"];
-  config.td_request.name = values["TD Name"];
-  config.td_request.domain = values["TD Institute"];
+  config.td_request.email = values["Google Account Email"];
+  config.td_request.name = values["Shared Drive Name"];
+  config.td_request.domain = values["Shared Drive Provider"];
 
 
   //Load Access Token
