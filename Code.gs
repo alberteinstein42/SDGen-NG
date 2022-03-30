@@ -1,9 +1,9 @@
 var config = {
 	domains: [{
-		name: "NAME OF THE DOMAIN",
-		client_id: "",
-		client_secret: "",
-		refresh_token: "",
+		name: "NAME OF THE SHARED DRIVE PROVIDER", //CONFIGURABLE
+		client_id: "", //CONFIGURABLE
+		client_secret: "", //CONFIGURABLE
+		refresh_token: "", //CONFIGURABLE
 	}],
 	access_token: "",
 	td_request: {
