@@ -49,7 +49,7 @@ A next generation Google Shared Drives generation tool, based on Google Forms an
 
 To deploy this project on Google Forms
 
-###1. Create Google Form
+### Create Google Form
 - Login to your account and go to [Google Drive](https://drive.google.com/drive)
 - Using option `New` > `Google Forms` > `Blank Form`, create a new Google Form.
 ![Creating Blank Form](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/create-google-form.jpg?raw=true)
