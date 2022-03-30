@@ -16,9 +16,9 @@ var config = {
 function onSubmit(e) {
 
   var values = e.namedValues;
-  config.td_request.email = values["Email"];
-  config.td_request.name = values["TD Name"];
-  config.td_request.domain = values["TD Institute"];
+  config.td_request.email = values["Google Account Email"];
+  config.td_request.name = values["Shared Drive Name"];
+  config.td_request.domain = values["Shared Drive Provider"];
 
 
   //Load Access Token
