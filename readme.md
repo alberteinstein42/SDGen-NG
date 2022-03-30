@@ -99,3 +99,8 @@ To deploy this project on Google Forms
 - In case the Generator doesn't work as intended, you may see the execution log of every request as shown in the image - 
 ![Execution Log](https://github.com/alberteinstein42/SDGen-NG/blob/main/documentation/images/execution-log.png?raw=true)
 - The code is in Javascript, so a fairly basic knowledge of Javascript would be enough to debug small syntex-typo issues. For serious bugs, please open a fresh [issue](https://github.com/alberteinstein42/SDGen-NG/issues). 
+
+
+## Authors & Contributors
+
+- [@alberteinstein42](https://github.com/alberteinstein42) - Original Creator
